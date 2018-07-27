@@ -19,7 +19,7 @@
       - osp.smoke
 
   - name: Cat webpage
-    debug: output is {{ register }}
+    debug: msg={{ register }}
 
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
